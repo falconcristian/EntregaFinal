@@ -16,6 +16,7 @@ var contactoRouter = require('./routes/contacto');
 var lentesvrRouter = require('./routes/lentesvr');
 var loginRouter =  require('./routes/admin/login');
 var adminRouter = require('./routes/admin/novedades');
+var noticiasRouter = require('./routes/noticias');
 
 var app = express();
 
@@ -59,6 +60,7 @@ app.use('/contacto', contactoRouter);
 app.use('/lentesvr', lentesvrRouter);
 app.use('/admin/login', loginRouter);
 app.use('/admin/novedades',secured, adminRouter);
+app.use('/noticias', noticiasRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

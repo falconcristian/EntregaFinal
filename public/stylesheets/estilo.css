@@ -12,6 +12,8 @@
 	
 }
 
+
+
 #nav-sociales {
 	height: 35px;
 	width: 100%;
@@ -33,7 +35,7 @@
 
 #botonera ul li {
 	float: left;
-	width: 158px;
+	width: 130px;
 	list-style-type: none;
 	line-height: 45px;
 	text-align: center;
@@ -133,6 +135,33 @@ h2 {
 	margin-left: 8px;
 	font-size: 20px;
 }
+
+.titulonoticias {
+	font-family: "Calibri Light";
+	text-align: center;
+	color: #FFF;
+	font-size: 40px;
+	margin-bottom: 20px;
+
+}
+
+.noticias{
+border-top: 40px;
+border-bottom-style: double;
+border: medium groove rgb(83, 58, 175);
+box-shadow: 7px 7px 8px 0px rgba(50, 50, 50, 0.68);
+margin-bottom: 10px;
+
+
+}
+
+#centronoticias {
+	background-color: rgba(0,0,0,0.5);
+	height: flex;
+
+	
+}
+
 
 #caja1 {
 	float: left;
