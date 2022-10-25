@@ -10,7 +10,7 @@
 
         </div>
 <div class="col-5 text-end"> 
-     <a href="" class="btn btn-success"><i class="fas fa-plus"></i> Nuevo </a> 
+     <a href="/admin/novedades/agregar" class="btn btn-success"><i class="fas fa-plus"></i> Nuevo </a> 
         
 </div>
 
@@ -22,18 +22,18 @@
             <table class="table">
                 <thead class="thead-dark">
                     <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">Titulo</th>
-                        <th scope="col" class="text-center">Acciones</th>
+                        <th scope="col" style="color:aliceblue ;" >#</th>
+                        <th scope="col" style="color:aliceblue ;" >Titulo</th>
+                        <th scope="col" style="color:aliceblue ;"class="text-center">Acciones</th>
                     </tr>
                 </thead>
                 <tbody>
                       {{#each novedades}}
                     <tr>
-                        <th scope="row">{{id}}</th>
-                        <td>{{titulo}}</td>
+                        <th scope="row" style="color:aliceblue ;">{{id}}</th>
+                        <td style="color:aliceblue ;">{{titulo}}</td>
                         <td class="text-center">
-                            <a href="#" class="btn btn-sm btn-secondary"><i class="fa fa-pencil"></i></a>
+                            <a href="/admin/novedades/modificar/{{id}}" class="btn btn-sm btn-secondary"><i class="fa fa-pencil"></i></a>
                             <a href="/admin/novedades/eliminar/{{id}}" class="btn btn-sm btn-secondary"><i class="fa fa-trash"></i></a>
                         </td>
                     </tr>
@@ -47,11 +47,11 @@
 
  
     <section class="holder">
-        <h2>Novedades</h2>
+        <h2>Últimas noticias agregadas</h2>
         {{#each novedades}}
         <div class="novedades">
             <h3>{{titulo}}</h3>
-            <h4>{{subtitulo}}</h4>
+            <h4 style="color:rgb(118, 228, 104) ;">{{subtitulo}}</h4>
             <p>{{cuerpo}}</p>
             <hr>
 </div>
