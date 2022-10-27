@@ -1,21 +1,21 @@
 <div id="centro">
 
  <div id="caja-form">
-  <form action="/contacto" method="post">
-  <label>Nombre:</label>
+  <form action="/contacto" method="post" class="formulario">
+  <label for="nombre">Nombre:</label>
   <input name="nombre" type="text">
   <br>
-  <label>Apellido:</label>
+  <label for="apellido">Apellido:</label>
   <input name="apellido" type="text">
   <br>
-  <label>E-mail:</label>
+  <label for="email">E-mail:</label>
   <input name="email" type="email">
   <br>
-  <label>Mensaje:</label>
+  <label for="mensaje">Mensaje:</label>
   <input name="mensaje" type="text">
   <br>
   <br>
-  <input name="enviar" type="submit" value="enviar" id="enviar">
+  <input type="submit" value="Enviar" id="enviar">
   <input name="reset" type="reset" value="reset" id="reset">
   </form>
   <p> {{message}} </p>
