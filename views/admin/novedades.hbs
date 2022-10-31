@@ -56,15 +56,17 @@ No se encontraron resultados para "<strong>{{q}}</strong>"
 
     </div>
 
- 
+
     <section class="holder">
-        <h2>Últimas noticias agregadas</h2>
+        <h2 style="color: red ; font-size: 30px ;">Últimas noticias agregadas</h2>
         {{#each novedades}}
+         <div id="centronoticias">
         <div class="novedades">
-            <h3>{{titulo}}</h3>
-            <h4 style="color:rgb(118, 228, 104) ;">{{subtitulo}}</h4>
+            <h1 style="font-size: 30px ;">{{titulo}}</h1>
+            <h3 style="color:yellow ; font-size: 20px;">{{subtitulo}}</h3>
             <p>{{cuerpo}}</p>
             <hr>
+            </div>
 </div>
 {{/each}}
 </section>
